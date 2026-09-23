@@ -6,16 +6,17 @@
 }
 
 body {
-    background-color: #fcf8f2;
+    background-color: #fdfaf5;
     color: #333;
 }
 
+/* Header */
 header {
     background: linear-gradient(135deg, #8B4513, #D2691E);
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 header h1 {
@@ -26,7 +27,7 @@ header h1 {
 
 header p {
     font-size: 1.1rem;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .call-btn-header {
@@ -34,7 +35,7 @@ header p {
     margin-top: 15px;
     background-color: #27ae60;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
@@ -45,31 +46,37 @@ header p {
     background-color: #219150;
 }
 
+/* Banner */
 .hero {
     text-align: center;
-    padding: 3rem 1rem;
-    background-color: #fff8f0;
+    padding: 2.5rem 1rem;
+    background-color: #fff3e6;
     border-bottom: 2px solid #f0e2d0;
 }
 
 .hero h2 {
     color: #8B4513;
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
+.hero p {
+    color: #555;
+    font-size: 1.05rem;
+}
+
+/* Mahsulotlar kartochkasi */
 .container {
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: 2.5rem auto;
     padding: 0 1rem;
 }
 
 .section-title {
     text-align: center;
-    font-size: 22px;
+    font-size: 2rem;
     color: #8B4513;
     margin-bottom: 2rem;
-    position: relative;
 }
 
 .products-grid {
@@ -80,16 +87,17 @@ header p {
 
 .product-card {
     background: white;
-    border-radius: 15px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     padding-bottom: 1.5rem;
 }
 
 .product-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .product-card img {
@@ -99,13 +107,13 @@ header p {
 }
 
 .product-card h3 {
-    margin: 1rem 0 0.5rem;
+    margin: 1.2rem 0 0.5rem;
     color: #4a2c11;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
 }
 
 .product-card p {
-    padding: 0 1rem;
+    padding: 0 1.2rem;
     color: #666;
     font-size: 0.95rem;
     margin-bottom: 1.2rem;
@@ -115,7 +123,7 @@ header p {
     display: inline-block;
     background-color: #e67e22;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 22px;
     border-radius: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -126,8 +134,9 @@ header p {
     background-color: #d35400;
 }
 
+/* Bog'lanish bo'limi */
 .contact-section {
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: center;
     padding: 3rem 1rem;
     margin-top: 3rem;
@@ -142,7 +151,7 @@ header p {
 
 .contact-highlight {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #555;
 }
 
@@ -155,12 +164,17 @@ header p {
 
 .contact-btn {
     display: inline-block;
-    padding: 12px 25px;
+    padding: 14px 28px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
     color: white;
+    transition: opacity 0.3s;
+}
+
+.contact-btn:hover {
+    opacity: 0.9;
 }
 
 .contact-btn.phone {
