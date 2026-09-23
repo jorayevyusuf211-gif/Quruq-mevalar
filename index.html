@@ -3,58 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bolalar Kiyim Do'koni</title>
+    <title>Mamin Mir - Shirinliklar va Chaq-chuqlar Do'koni</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header / Sarlavha bo'limi -->
     <header>
-        <h1>Bolalar Kiyimlari Do'koni</h1>
-        <nav>
-            <a href="#kiyimlar">Kiyimlar</a>
-            <a href="#aloqa">Biz bilan aloqa</a>
-        </nav>
+        <div class="logo-container">
+            <h1>Mamin Mir</h1>
+            <p>Mazzali va Sifatli Shirinliklar, Quruq Mevalar va Chaq-chuqlar</p>
+        </div>
+        <a href="tel:+998943921119" class="call-btn-header">📞 Zakaz uchun: +998 94 392 11 19</a>
     </header>
 
-    <main>
-        <h2>Bizning Mahsulotlar</h2>
-        <div id="kiyimlar" class="products">
-            
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Bolalar ko'ylagi">
-                <h3>Yozgi Ko'ylak</h3>
-                <p>Narxi: 120 000 so'm</p>
-                <button>Sotib olish</button>
+    <!-- Banner bo'limi -->
+    <section class="hero">
+        <h2>Tabiiy va Halol Mahsulotlar</h2>
+        <p>Eng sara gajak, chaqichlar, pista va quruq mevalar sizning dasturxoningiz uchun!</p>
+    </section>
+
+    <!-- Mahsulotlar katalogi -->
+    <main class="container">
+        <h2 class="section-title">Mahsulotlarimiz</h2>
+        
+        <div class="products-grid">
+            <!-- Pista -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=500" alt="Pista">
+                <h3>Sara Pista</h3>
+                <p>Ochilgan, sifatli va mazali pistasimon chaqichlar.</p>
+                <a href="https://t.me/Yusuf_R11" target="_blank" class="order-btn">✈️ Telegram orqali zakaz</a>
             </div>
 
-            <div class="card">
-                <img src="https://via.placeholder.com/150" alt="Bolalar futbolkasi">
-                <h3>Paxtali Futbolka</h3>
-                <p>Narxi: 85 000 so'm</p>
-                <button>Sotib olish</button>
+            <!-- Keshyu -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1543208541-0059d6422220?w=500" alt="Keshyu">
+                <h3>Sifatli Keshyu</h3>
+                <p>Vitaminlarga boy, shirin va mazzali keshyu yong'og'i.</p>
+                <a href="https://t.me/Yusuf_R11" target="_blank" class="order-btn">✈️ Telegram orqali zakaz</a>
             </div>
 
+            <!-- Mayiz -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1588615419958-e4eb017d8ef0?w=500" alt="Mayiz">
+                <h3>Qora Soya Mayiz</h3>
+                <p>Tabiiy va shirin, shifobaxsh sara qora mayizlar.</p>
+                <a href="https://t.me/Yusuf_R11" target="_blank" class="order-btn">✈️ Telegram orqali zakaz</a>
+            </div>
+
+            <!-- Gajak -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500" alt="Gajak">
+                <h3>Milliy Gajak</h3>
+                <p>Asal va yong'oqlardan tayyorlangan milliy shirinlik.</p>
+                <a href="https://t.me/Yusuf_R11" target="_blank" class="order-btn">✈️ Telegram orqali zakaz</a>
+            </div>
+
+            <!-- Chaqichlar assorti -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1508061252973-108b9e6e44d3?w=500" alt="Chaqichlar Assorti">
+                <h3>Aralash Chaqichlar</h3>
+                <p>Bodom, grek yong'og'i va turlicha chaqichlar to'plami.</p>
+                <a href="https://t.me/Yusuf_R11" target="_blank" class="order-btn">✈️ Telegram orqali zakaz</a>
+            </div>
         </div>
     </main>
 
-    <section id="aloqa">
-        <h2>Buyurtma berish / Savollar uchun</h2>
-        <form>
-            <label for="name">Ismingiz:</label><br>
-            <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required><br><br>
-
-            <label for="phone">Telefon raqamingiz:</label><br>
-            <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required><br><br>
-
-            <label for="message">Xabar yoki buyurtma tafsiloti:</label><br>
-            <textarea id="message" name="message" rows="4" placeholder="Kiyim o'lchamlari va rangini yozing..."></textarea><br><br>
-
-            <button type="submit">Yuborish</button>
-        </form>
+    <!-- Bog'lanish va Telegram Kanal bo'limi -->
+    <section class="contact-section">
+        <h2>Buyurtma Berish va Aloqa</h2>
+        <p class="contact-highlight">Biz bilan bog'laning va sifatli chaq-chuqlarga buyurtma bering!</p>
+        
+        <div class="contact-buttons">
+            <a href="tel:+998943921119" class="contact-btn phone">
+                📞 Telefon: +998 94 392 11 19
+            </a>
+            <a href="https://t.me/Yusuf_R11" target="_blank" class="contact-btn telegram">
+                ✈️ Telegram Admin (@Yusuf_R11)
+            </a>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Bolalar kiyimlari do'koni. Barcha huquqlar himoyalangan.</p>
+        <p>&copy; 2026 Mamin Mir. Barcha huquqlar himoyalangan.</p>
     </footer>
 
 </body>
