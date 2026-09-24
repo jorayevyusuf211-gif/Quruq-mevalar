@@ -1,6 +1,4 @@
-p {
-    width: 100px;
-    height: 80px;
-    background-color: green;
+.logo-container {
+    background-color: yellow;
     color: red;
 }
