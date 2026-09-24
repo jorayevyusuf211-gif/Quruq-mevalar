@@ -1,5 +1,9 @@
+<link rel="stylesheet" href="style.css">
 p {
-  backround-color: green;
-  color: blue;
+ width: 100px;
+  height: 60px;
+  bacground-color: green;
+  color: red;
   
 }
+
