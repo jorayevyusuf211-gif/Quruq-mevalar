@@ -6,3 +6,9 @@ h2 {
     color: red;
     background-color: blue;
 }
+.product-card {
+    width: 100px;
+    height: 70px;
+    color: green:
+    border: 3px inset red;
+}
