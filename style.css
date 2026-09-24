@@ -1,9 +1,8 @@
 <link rel="stylesheet" href="style.css">
 p {
- width: 100px;
-  height: 60px;
-  background-color: green;
-  color: red;
-  
+    width: 100px;
+    height: 80px;
+    background-color: green;
+    color: red;
 }
 
