@@ -25,6 +25,10 @@ a {
 }
 
 .rasm2 {
-    text-alihn: center;
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto; /* Blokning o'zini sahifa o'rtasiga suradi */
 }
