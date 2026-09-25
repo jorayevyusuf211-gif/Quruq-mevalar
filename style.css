@@ -35,3 +35,36 @@ a {
     height: auto;
 }
 
+/* 1. .rasm3 ichidagi rasmni o'rtaga keltirish */
+.rasm3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Rasm ekrandan chiqib ketmasligi uchun */
+}
+
+/* 2. h5 sarlavhasiga orqa foni pushti va yozuvi aniq ko'rinadigan stillar */
+h5 {
+  background-color: pink; /* yoki to'qroq pushti uchun: #ff69b4 */
+  color: #111111;         /* Yozuv to'q rangda bo'lsa, pushti fonda aniq va tinq ko'rinadi */
+  padding: 8px 12px;      /* Matn atrofiga joy tashlash */
+  text-align: center;     /* Matnni ham o'rtaga tekislash uchun */
+  font-weight: bold;      /* Yozuvni qalinroq va aniqroq qilish */
+}
+
+/* 3. a tegiga rang va uslub berish */
+a {
+  color: #0088cc;          /* Havola (link) rangi */
+  text-decoration: none;   /* Ostidagi chiziqni olib tashlash */
+  font-weight: bold;
+}
+
+/* Tugma ko'rinishidagi link bo'lsa (.order-btn sinfi uchun) */
+.order-btn {
+  display: inline-block;
+  background-color: #0088cc;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
