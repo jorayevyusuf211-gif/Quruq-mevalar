@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header (Sarlavha bo'limi) */
+/* Header bo'limi */
 header {
   background: linear-gradient(135deg, #4a2c11, #2d1806);
   color: #fff;
@@ -79,7 +79,7 @@ header {
   margin: 0 auto;
 }
 
-/* Mahsulotlar bo'limi */
+/* Sarlavha */
 .quti {
   text-align: center;
   margin-bottom: 20px;
@@ -104,21 +104,23 @@ header {
   border-radius: 2px;
 }
 
-/* Mahsulotlarni yonma-yon chiqaruvchi Grid (To'r) */
+/* Mahsulotlarni yonma-yon chiqarish */
 .products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
   padding: 20px 8%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Har bir mahsulot kartasi */
+/* Mahsulot kartalari */
 .rasm, .rasm2, .rasm3 {
   background: #ffffff;
   border-radius: 15px;
   padding: 20px;
+  width: 300px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
@@ -134,7 +136,7 @@ header {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Rasm o'lchamlarini tekislash */
+/* Rasmlar hajmi */
 .products-grid img {
   width: 100%;
   height: 200px;
@@ -143,9 +145,8 @@ header {
   margin-bottom: 15px;
 }
 
-/* Sarlavha va matnlar */
 .products-grid h3, .products-grid h4 {
-  font-size: 18px;
+  font-size: 17px;
   color: #2c3e50;
   margin-bottom: 10px;
 }
@@ -153,34 +154,45 @@ header {
 .products-grid p {
   font-size: 14px;
   color: #7f8c8d;
-  margin-bottom: 20px;
-  flex-grow: 1;
+  margin-bottom: 15px;
 }
 
-/* Telegram Zakaz tugmasi (pastda joylashadi) */
+/* Telegram samolyotcha tugmasi */
 .order-btn {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  background-color: #0088cc;
-  color: #ffffff;
+  background-color: #24a1de;
+  color: white;
   text-decoration: none;
   padding: 12px 0;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-top: 10px;
   transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Telegram samolyotchasi (kod orqali qo'shiladi) */
+.order-btn::before {
+  content: '✈';
+  font-size: 22px;
+  margin-bottom: 3px;
 }
 
 .order-btn h1 {
   font-size: 15px;
   font-weight: 600;
   margin: 0;
+  color: white;
 }
 
 .order-btn:hover {
-  background-color: #006699;
+  background-color: #1a7ab0;
   transform: scale(1.02);
 }
 
-/* Mobil qurilmalar uchun moslashuvchanlik */
+/* Mobil moslashuvchanlik */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
