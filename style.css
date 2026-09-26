@@ -1,172 +1,189 @@
-.buy {
-    display: inline-block;
-
-    color: white;
-    background: linear-gradient(
-        135deg,
-        #17602c,
-        #48a84f
-    );
-
-    text-decoration: none;
-
-    padding: 12px 28px;
-
-    border-radius: 40px;
-
-    font-weight: bold;
-    font-size: 17px;
-
-    transition: .3s;
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.buy:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(40,120,50,.35);
+body {
+  background-color: #fcf8f2;
+  color: #333;
+  line-height: 1.6;
 }
 
+/* Header (Sarlavha bo'limi) */
+header {
+  background: linear-gradient(135deg, #4a2c11, #2d1806);
+  color: #fff;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  flex-wrap: wrap;
+  gap: 15px;
+}
 
-/* =========================
-   KATTA REKLAMA BLOKI
-========================= */
+.logo-container h1 {
+  font-size: 28px;
+  color: #f4c430;
+  margin-bottom: 5px;
+}
 
-.banner {
-    max-width: 1100px;
-    margin: 20px auto 60px;
+.logo-container p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
 
-    padding: 60px 25px;
+/* Qo'ng'iroq (Telefon) tugmasi */
+.call-btn-header {
+  background-color: #27ae60;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(39, 174, 96, 0.3);
+}
 
+.call-btn-header h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.call-btn-header:hover {
+  background-color: #219150;
+  transform: translateY(-2px);
+}
+
+/* Banner bo'limi */
+.box {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff8ee;
+  border-bottom: 2px solid #f1e0ca;
+  margin-bottom: 30px;
+}
+
+.box h2 {
+  font-size: 32px;
+  color: #8b4513;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Mahsulotlar bo'limi */
+.quti {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.section-title::after {
+  content: '';
+  width: 60%;
+  height: 3px;
+  background-color: #d35400;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  border-radius: 2px;
+}
+
+/* Mahsulotlarni yonma-yon chiqaruvchi Grid (To'r) */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 8%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Har bir mahsulot kartasi */
+.rasm, .rasm2, .rasm3 {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #eee;
+}
+
+.rasm:hover, .rasm2:hover, .rasm3:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Rasm o'lchamlarini tekislash */
+.products-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Sarlavha va matnlar */
+.products-grid h3, .products-grid h4 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.products-grid p {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Telegram Zakaz tugmasi (pastda joylashadi) */
+.order-btn {
+  display: inline-block;
+  width: 100%;
+  background-color: #0088cc;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.order-btn h1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.order-btn:hover {
+  background-color: #006699;
+  transform: scale(1.02);
+}
+
+/* Mobil qurilmalar uchun moslashuvchanlik */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
     text-align: center;
-
-    color: white;
-
-    border-radius: 30px;
-
-    background:
-        linear-gradient(
-            rgba(15,75,35,.82),
-            rgba(15,75,35,.82)
-        ),
-        url("660.jpg") center/cover;
-
-    box-shadow: 0 15px 35px rgba(0,0,0,.2);
-}
-
-.banner h2 {
-    font-size: 40px;
-    margin-bottom: 12px;
-}
-
-.banner p {
-    font-size: 19px;
-    margin-bottom: 25px;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    background: #10391f;
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-}
-
-footer h2 {
-    font-size: 30px;
-    margin-bottom: 8px;
-}
-
-footer p {
-    color: #d5e8d3;
-    margin: 5px;
-}
-
-
-/* =========================
-   TELEFON UCHUN
-========================= */
-
-@media (max-width: 800px) {
-
-    header {
-        padding: 45px 15px;
-    }
-
-    header h1 {
-        font-size: 38px;
-    }
-
-    header p {
-        font-size: 17px;
-    }
-
-    header::before,
-    header::after {
-        font-size: 35px;
-    }
-
-    .info {
-        grid-template-columns: 1fr;
-    }
-
-    .products {
-        grid-template-columns: 1fr;
-    }
-
-    .title {
-        margin-left: 15px;
-        margin-right: 15px;
-        font-size: 30px;
-    }
-
-    .card img {
-        height: 280px;
-    }
-
-    .banner {
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 45px 20px;
-    }
-
-    .banner h2 {
-        font-size: 28px;
-    }
-
-    .phone {
-        font-size: 17px;
-        padding: 13px 22px;
-    }
-}
-
-
-/* =========================
-   JUDA KICHIK TELEFON
-========================= */
-
-@media (max-width: 450px) {
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    .order {
-        margin: 20px 12px;
-        padding: 25px 15px;
-    }
-
-    .card-content {
-        padding: 20px 15px;
-    }
-
-    .card h3 {
-        font-size: 22px;
-    }
-
-    .banner h2 {
-        font-size: 25px;
-    }
+  }
 }
