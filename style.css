@@ -1,57 +1,172 @@
-.logo-container {
-    text-align: center;
-    background-color: yellow;
-    color: red;
-}
-a {
-   display: block;
-    text-align: center;
-    background-color: blue;
-   color: red;
-}
-.box {
-    text-align: center;
-    background-color: red;
-    color: clara
-}
-.quti {
-    text-align: center;
-    background-color: pink;
-    color: mia;
-}
-.rasm {
-    text-align: center;
-    border: 2px solid red;   
-}
-.rasm2 {
-    text-align: center;
-    width: 100%;
+.buy {
+    display: inline-block;
+
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #17602c,
+        #48a84f
+    );
+
+    text-decoration: none;
+
+    padding: 12px 28px;
+
+    border-radius: 40px;
+
+    font-weight: bold;
+    font-size: 17px;
+
+    transition: .3s;
 }
 
-.rasm2 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+.buy:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(40,120,50,.35);
 }
 
-/* Rasmlarni o'rtaga keltirish */
-.rasm img, .rasm2 img, .rasm3 img {
-  width: 100%;
-  max-width: 350px;     /* Rasmlar juda katta bo'lib ketmasligi uchun */
-  height: auto;
-  display: block;        /* O'rtaga kelishi uchun block bo'lishi shart */
-  margin: 0 auto;        /* Rasmni bloki ichida o'rtaga tekislaydi */
-  border-radius: 8px;
+
+/* =========================
+   KATTA REKLAMA BLOKI
+========================= */
+
+.banner {
+    max-width: 1100px;
+    margin: 20px auto 60px;
+
+    padding: 60px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            rgba(15,75,35,.82),
+            rgba(15,75,35,.82)
+        ),
+        url("660.jpg") center/cover;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
 }
 
-/* Har bir blok joylashuvi */
-.rasm, .rasm2, .rasm3 {
-  background-color: #ffffff;
-  max-width: 400px;
-  margin: 25px auto;    /* Bloklarning o'zini ham sahifa o'rtasiga qo'yadi */
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  text-align: center;
+.banner h2 {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.banner p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #10391f;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+footer h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #d5e8d3;
+    margin: 5px;
+}
+
+
+/* =========================
+   TELEFON UCHUN
+========================= */
+
+@media (max-width: 800px) {
+
+    header {
+        padding: 45px 15px;
+    }
+
+    header h1 {
+        font-size: 38px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    header::before,
+    header::after {
+        font-size: 35px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 30px;
+    }
+
+    .card img {
+        height: 280px;
+    }
+
+    .banner {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 45px 20px;
+    }
+
+    .banner h2 {
+        font-size: 28px;
+    }
+
+    .phone {
+        font-size: 17px;
+        padding: 13px 22px;
+    }
+}
+
+
+/* =========================
+   JUDA KICHIK TELEFON
+========================= */
+
+@media (max-width: 450px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .order {
+        margin: 20px 12px;
+        padding: 25px 15px;
+    }
+
+    .card-content {
+        padding: 20px 15px;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .banner h2 {
+        font-size: 25px;
+    }
 }
